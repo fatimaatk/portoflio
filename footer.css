@@ -1,0 +1,20 @@
+footer{
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  background-color: #2d3844;
+  justify-content: center;
+  color: white;
+}
+
+  .logocontact{
+    width: 2rem;
+    border-radius:50% ;
+  }
+
+  .linkgit2{
+    width: 2rem;
+  }
+

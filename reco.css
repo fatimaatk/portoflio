@@ -1,0 +1,151 @@
+.recommandations{
+  height: 100%;
+  padding-bottom: 2rem;
+}
+.slides {
+
+  width: 60vw;
+  height: 60vh;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+
+
+.slides input { display: none; }
+
+.slide-container { 
+  display: flex; 
+  justify-content: center;
+}
+
+.slide {
+  text-align: center;
+  padding: 2rem;
+  top: 0;
+  opacity: 0;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  box-shadow: grey 5px 5px 15px;
+  transform: scale(0);
+  transition: all .7s ease-in-out;
+  font-size : 20px;
+  border-radius: 30px;
+  background-color: #2d3844;
+  color : white;
+}
+
+
+
+.fleche{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.fleche label {
+  display: none;
+  padding-top: 25vh;
+  opacity: 1;
+  z-index: 9;
+  cursor: pointer;
+  transition: opacity .2s;
+  font-size: 20px;
+  color :#c4865d;
+
+}
+
+
+.slide:hover + .fleche label { opacity: 0.5; }
+
+.fleche label:hover { opacity: 1; }
+
+.fleche .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+  opacity: 1;
+
+  transform: scale(1);
+
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .fleche label { display: block; }
+
+.fleche-dots {
+width: 100%;
+bottom: 9px;
+height: 11px;
+display: block;
+position: absolute;
+text-align: center;
+}
+
+.fleche-dots .fleche-dot {
+width: 11px;
+height: 11px;
+margin: 0 4px;
+position: relative;
+border-radius: 100%;
+display: inline-block;
+background-color: #e8b694c0;
+}
+
+.fleche-dots .fleche-dot:hover {
+cursor: pointer;
+background-color: #c4865d;
+}
+
+input#img-1:checked ~ .fleche-dots label#img-dot-1,
+input#img-2:checked ~ .fleche-dots label#img-dot-2,
+input#img-3:checked ~ .fleche-dots label#img-dot-3,
+input#img-4:checked ~ .fleche-dots label#img-dot-4,
+input#img-5:checked ~ .fleche-dots label#img-dot-5,
+input#img-6:checked ~ .fleche-dots label#img-dot-6 {
+background: #c4865d;
+}
+
+
+@media (max-width: 1000px) {
+  .recommandations{
+    padding-bottom: 3rem;
+    padding-top : 2rem;
+  }
+  .slides {
+    padding-top: 1rem;
+    width: 100vw;
+    height: 80vh;
+    
+  }
+.slide{
+  font-size: 13px;
+    line-height: 1.5;
+}
+  .fleche{
+    display : none;
+  }
+  .fleche-dots {
+    width: 100%;
+   
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    }
+}

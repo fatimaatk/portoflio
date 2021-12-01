@@ -1,0 +1,261 @@
+#parcoursglobal{
+  padding-top: 2rem;
+  color: black;
+
+}
+
+.parcours{
+  box-sizing: border-box;
+  background-color: #2d3844;
+
+  margin-bottom: 2rem;
+}
+
+.parcours h3{
+  font-size: 1rem;
+  width: 100%;
+}
+
+/*timeline div*/
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+/*timeline verticale*/
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background: white;
+
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+
+}
+
+/*container des mini cart*/
+.container {
+  padding: 20px 0px;
+  position: relative;
+  background: inherit;
+  width: 100%;
+  text-align: start;
+
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 33rem;
+}
+
+
+/*cercle sur timeline*/
+.container.left::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 10px);
+  right: 35rem;
+  background:  #e2b261;
+  border: 2px solid black;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: 30px;
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  background: #e2b261;
+  border: 2px solid black;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+
+/*ligne horizontal vers timeline*/
+.container.left::before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 36rem;
+  background: black;
+
+}
+
+.container.right::before {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 2px;
+  top: calc(50% - 1px);
+  background: black;
+  
+}
+
+/* date*/
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 13px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+color : white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left .date {
+  right: 18rem;
+
+  text-align: left;
+  width: 8rem;
+}
+
+.container.right .date {
+ left: -15rem;
+ text-align: right;
+  width: 8rem;
+}
+
+
+/*Container texte*/
+.container.left .content {
+
+  padding: 1rem;
+  border : solid black;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+  width: 40em;
+  height: 8rem;
+  z-index: 1;
+  background-color : white;
+
+  
+}
+
+.container.right .content {
+
+  padding: 1rem;
+  background-color : white;
+  border : solid black;
+  position: relative;
+  border-radius: 500px 0 0 500px;
+  width: 40em;
+  z-index: 1;
+  right: 4rem;
+  text-align: right;
+  z-index: 1;
+  height: 8rem;
+
+
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 16px;
+
+  color: #d4813e;
+}
+
+@media (max-width: 1000px) {
+  #parcoursglobal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .parcours{
+    display: flex;
+  
+    width: 100%;
+  }
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    display: flex;
+
+    width: 50%;
+    padding-left: 38%;
+
+  }
+
+
+  .container.right {
+    left: 0;
+  }
+  
+
+
+  /*timeline verticale */
+  .container.left::after, 
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    width: 60%;
+  }
+
+  .container.left .date{
+    font-size: 12px;
+    right: 0;
+    left: 0;
+    width: 4.8rem;
+    text-align: end;
+
+  }
+  .container.right .date {
+    font-size: 12px;
+    text-align: end;
+    width: 4.8rem;;
+    right: 0;
+    left: 0;
+  }
+
+  .container.left .content{
+    text-align: start;
+    border-radius: 0;
+    height: 16rem;
+    padding: 5px;
+  }
+  .container.right .content {
+    text-align: start;
+    width: 100%;
+    right: 0;
+    left : 0;
+    border-radius: 0;
+    height: 16rem;
+    padding: 5px;
+  }}
+
