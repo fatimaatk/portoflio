@@ -137,8 +137,16 @@ background: #c4865d;
   font-size: 13px;
     line-height: 1.5;
 }
-  .fleche{
-    display : none;
+  .prev {
+    margin-top: 21rem;
+
+    width: 8rem;
+    text-align: center;
+  }
+  .next{
+    margin-top: 21rem;
+    width: 8rem;
+    text-align: center;
   }
   .fleche-dots {
     width: 100%;
