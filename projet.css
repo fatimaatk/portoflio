@@ -63,14 +63,14 @@ text-align: center;
 display: flex;
 
 justify-content: space-around;
-width: 10rem;
+width: 5rem;
 }
 .linkprojet{
-width: 3.5rem;
+width: 2rem;
 }
 
 .linkgit{
-  width: 3.5rem;
+  width: 2rem;
 }
 
 
@@ -98,8 +98,7 @@ hr{
   .texteprojet{
     width: 30rem;
 
-  }
-  
+  } 
 
 }
 
