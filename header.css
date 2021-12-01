@@ -399,7 +399,7 @@ li {
 
 #scroll_to_top {
   position: fixed;
-  z-index: 0;
+  z-index: 10;
   width: 25px;
   height: 25px;
   bottom: 50px;
