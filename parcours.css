@@ -181,7 +181,7 @@ color : white;
   color: #d4813e;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   #parcoursglobal{
     display: flex;
     flex-direction: column;
