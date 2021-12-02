@@ -80,7 +80,7 @@ hr{
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .projet{
     display: flex;
     flex-direction: row;
@@ -96,8 +96,8 @@ hr{
 
   }
   .texteprojet{
-    width: 30rem;
-
+    width: 90%;
+    padding: 1rem;
   } 
 
 }
