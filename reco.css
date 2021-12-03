@@ -1,3 +1,5 @@
+
+  
 .recommandations{
   height: 100%;
   padding-bottom: 2rem;
@@ -121,8 +123,37 @@ input#img-6:checked ~ .fleche-dots label#img-dot-6 {
 background: #c4865d;
 }
 
-
 @media (max-width: 1024px) {
+  .recommandations{
+    padding-bottom: 3rem;
+    padding-top : 2rem;
+  }
+  .slides {
+    padding-top: 1rem;
+    width: 85vw;
+    height: 50vh;
+    
+  }
+.slide{
+  font-size: 13px;
+    line-height: 1.5;
+}
+  .fleche{
+   display: flex;
+   justify-content: space-between;
+  }
+  .prev {
+   
+    margin-top : 13.3rem;
+
+  }
+  .next{
+    margin-top : 13.3rem;
+    
+  
+  }}
+
+@media (max-width: 700px) {
   .recommandations{
     padding-bottom: 3rem;
     padding-top : 2rem;
@@ -141,13 +172,15 @@ background: #c4865d;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 90%;
+
   align-items: flex-end;
 }
   .prev {
 
     bottom: 0;
-    margin-top: 25rem;
+    margin-top: 25.5rem;
 
 
     text-align: center;
@@ -155,7 +188,7 @@ background: #c4865d;
   .next{
    
     bottom: 0;
-    margin-top: 25rem;
+    margin-top: 25.5rem;
 
 
     text-align: center;
