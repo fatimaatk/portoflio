@@ -51,10 +51,12 @@
 
 .container.left {
   left: 0;
+
 }
 
 .container.right {
   left: 33rem;
+  width: 40rem;
 }
 
 
@@ -210,7 +212,8 @@ color : white;
 
 
   .container.right {
-    left: 0;
+left: 0;
+width: 50%;
   }
   
 
